@@ -1,0 +1,181 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button>
+                <img src="assets/imgs/icons/menu.png">
+            </ion-menu-button>
+        </ion-buttons>
+        <ion-title>
+            <div class="titleDiv">
+                <img src="assets/imgs/icons/location.png">
+                <span> الدحيل، شارع أم الح..</span>
+            </div>
+        </ion-title>
+        <ion-buttons slot="end">
+            <ion-button class="custom">
+                <img src="assets/imgs/icons/headerRight.png">
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" dir="rtl">
+    <ion-grid>
+        <ion-row>
+            <ion-button class="searchBtn">
+                <span>ابحث عن مطعم، وجبة، خروف</span>
+                <ion-icon class="suffix-icon" name="search-outline"></ion-icon>
+            </ion-button>
+        </ion-row>
+        <ion-row>
+            <div class="title">
+                <h1>
+                    الأقسام الرئيسية
+                </h1>
+                <div class="redUnderline"></div>
+            </div>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <ion-slides pager="false" [options]="slideOpts" #slides>
+                    <ion-slide>
+                        <ion-card>
+                            <ion-card-content>
+                                <ion-img src="assets/imgs/home/slider1/sliderItem1.png"></ion-img>
+                            </ion-card-content>
+                        </ion-card>
+                        <span>طبخ بيتنا</span>
+                    </ion-slide>
+                    <ion-slide>
+                        <ion-card>
+                            <ion-card-content>
+                                <ion-img src="assets/imgs/home/slider1/sliderItem2.png"></ion-img>
+                            </ion-card-content>
+                        </ion-card>
+                        <span>كشتة</span>
+                    </ion-slide>
+                    <ion-slide>
+                        <ion-card>
+                            <ion-card-content>
+                                <ion-img src="assets/imgs/home/slider1/sliderItem3.png"></ion-img>
+                            </ion-card-content>
+                        </ion-card>
+                        <span>ولائم</span>
+                    </ion-slide>
+                    <ion-slide>
+                        <ion-card>
+                            <ion-card-content>
+                                <ion-img src="assets/imgs/home/slider1/sliderItem4.png"></ion-img>
+                            </ion-card-content>
+                        </ion-card>
+                        <span>الخروف</span>
+                    </ion-slide>
+                </ion-slides>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <div class="title">
+                <h1>
+                    الأكثر شهرة
+                </h1>
+                <div class="redUnderline"></div>
+            </div>
+        </ion-row>
+
+        <ion-row>
+            <ion-col>
+                <ion-slides pager="false" [options]="slideOpts2">
+                    <ion-slide>
+                        <img class="roundImg" src="assets/imgs/home/slider2/sliderItem1.png">
+                        <div class="slideContent">
+                            <p>- طبخ شرقي</p>
+                            <p>- جميع أنواع الولائم</p>
+                            <p>- توصيل سريع</p>
+                            <ion-img src="assets/imgs/home/slider2/sliderIcon.png"></ion-img>
+                        </div>
+                    </ion-slide>
+                    <ion-slide>
+                        <img src="assets/imgs/home/slider2/sliderItem1.png">
+                        <div class="slideContent">
+                            <p>- طبخ شرقي</p>
+                            <p>- جميع أنواع الولائم</p>
+                            <p>- توصيل سريع</p>
+                            <ion-img src="assets/imgs/home/slider2/sliderIcon.png"></ion-img>
+                        </div>
+                    </ion-slide>
+                </ion-slides>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <div class="title">
+                <h1>
+                    آخر طلباتي
+                </h1>
+                <div class="redUnderline"></div>
+            </div>
+        </ion-row>
+
+        <ion-row>
+            <ion-col>
+                <ion-slides pager="false" [options]="slideOpts2">
+                    <ion-slide>
+                        <div class="lastSlideContent">
+                            <ion-row>
+                                <ion-col class="leftAlign">
+                                    <p>1700 ر.ق</p>
+                                    <ion-button>
+                                        <span slot="start">
+                                          إعادة الطلب
+                                        </span>
+                                        <ion-img src="assets/imgs/icons/refresh.png" slot="end"></ion-img>
+                                    </ion-button>
+                                    <ion-button>
+                                        <span slot="start">
+                                          تقييم الطلب
+                                        </span>
+                                        <ion-img src="assets/imgs/icons/smileEmoji.png" slot="end"></ion-img>
+                                    </ion-button>
+                                </ion-col>
+                                <ion-col class="rightAlign">
+                                    <h3>خروف قوقازي</h3>
+                                    <p>صغير (وزن (٢٢ - ٢٦ كغ)</p>
+                                    <p>نوع التقطيع: مخصص</p>
+                                    <p>التوصيل: استراحة الخور</p>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </ion-slide>
+                    <ion-slide>
+                        <div class="lastSlideContent">
+                            <ion-row>
+                                <ion-col class="leftAlign">
+                                    <p>1700 ر.ق</p>
+                                    <ion-button>
+                                        <span slot="start">
+                                          إعادة الطلب
+                                        </span>
+                                        <ion-img src="assets/imgs/icons/refresh.png" slot="end"></ion-img>
+                                    </ion-button>
+                                    <ion-button>
+                                        <span slot="start">
+                                          تقييم الطلب
+                                        </span>
+                                        <ion-img src="assets/imgs/icons/smileEmoji.png" slot="end"></ion-img>
+                                    </ion-button>
+                                </ion-col>
+                                <ion-col class="rightAlign">
+                                    <h3>خروف قوقازي</h3>
+                                    <p>صغير (وزن (٢٢ - ٢٦ كغ)</p>
+                                    <p>نوع التقطيع: مخصص</p>
+                                    <p>التوصيل: استراحة الخور</p>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </ion-slide>
+                </ion-slides>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
