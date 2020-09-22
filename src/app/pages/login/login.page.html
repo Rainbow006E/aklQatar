@@ -1,0 +1,40 @@
+<ion-header [translucent]="false">
+    <ion-toolbar>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" dir="rtl">
+    <ion-grid>
+        <ion-row>
+            <ion-col class="logo">
+                <ion-img src="assets/imgs/icons/logo.png" class="ion-text-center text-center"></ion-img>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <h1>
+                لطفاً، أدخل رقم جوالك
+                <span class="redUnderline"></span>
+            </h1>
+            <p>حتى تستطيع حفظ بياناتك لاستخدامها مستقبلاً</p>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <div class="phoneForm" dir="ltr">
+                    <span class="title">OTP Authentication</span>
+                    <div class="phone">
+                        <ion-select [(ngModel)]="countryNum" okText="Okay" cancelText="Dismiss" (ionChange)="countryChange()">
+                            <ion-select-option *ngFor="let country of countries" [value]="country.dial_code"> {{ country.dial_code }} </ion-select-option>
+                        </ion-select>
+                        <ion-input type="number"></ion-input>
+                    </div>
+                    <ion-button (click)="next()"> التالي </ion-button>
+                </div>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <span class="link">
+                أو تصفح البرنامج كضيف
+            </span>
+        </ion-row>
+    </ion-grid>
+</ion-content>

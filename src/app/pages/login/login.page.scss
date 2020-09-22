@@ -1,0 +1,100 @@
+ion-menu-button {
+    color: var(--ion-color-primary);
+}
+
+ion-header {
+    ion-toolbar {
+        --border-width: 0;
+        --background: #F43D3D;
+        div.toolbar-background {
+            background: red;
+            border-bottom: 0 !important;
+            --border: 0;
+        }
+    }
+}
+
+ion-header.header-md::after {
+    background: none;
+}
+
+ion-content {
+    font-size: 16px;
+    color: white;
+    font-family: Helvetica Neue LT Arabic 55 Roman;
+    --background: #F43D3D;
+    ion-grid {
+        padding: 0 16px;
+        ion-col.logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            ion-img {
+                width: 60%;
+                margin: 56px auto;
+            }
+        }
+    }
+    h1 {
+        color: white;
+        margin-bottom: 8px;
+        position: relative;
+        span.redUnderline {
+            border-top: 4px solid white;
+            width: 48px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    p {
+        color: white;
+        margin-top: 0;
+    }
+    .phoneForm {
+        background: white;
+        width: 100%;
+        border-radius: 30px;
+        padding: 24px 10px 6px;
+        .title {
+            padding: 0 8px;
+        }
+        .phone {
+            display: flex;
+            padding: 0 8px;
+            ion-select {
+                --padding-start: 0;
+                --padding-end: 0;
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid black;
+                &::part(icon) {
+                    margin-left: 8px;
+                    opacity: 1;
+                }
+            }
+            ion-input {
+                margin-left: 8px;
+                border-bottom: 1px solid black;
+                &::part(icon) {
+                    display: none;
+                }
+            }
+        }
+        ion-button {
+            --background: #F43D3D;
+            --background-hover: #F43D3D;
+            --background-focused: #F43D3D;
+            --background-activated: #F43D3D;
+            --border-radius: 25px;
+            margin-top: 16px;
+            width: 100%;
+            font-size: 25px;
+            height: 50px;
+        }
+    }
+    span.link {
+        color: white;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,100 @@
+ion-menu-button {
+    color: var(--ion-color-primary);
+}
+
+ion-header {
+    ion-toolbar {
+        --border-width: 0;
+        --background: #F43D3D;
+        div.toolbar-background {
+            background: red;
+            border-bottom: 0 !important;
+            --border: 0;
+        }
+    }
+}
+
+ion-header.header-md::after {
+    background: none;
+}
+
+ion-content {
+    font-size: 16px;
+    color: white;
+    font-family: Helvetica Neue LT Arabic 55 Roman;
+    --background: #F43D3D;
+    ion-grid {
+        padding: 0 16px;
+        height: 100%;
+        ion-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            ion-col.logo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                ion-img {
+                    width: 60%;
+                    margin: 56px auto;
+                }
+            }
+        }
+    }
+    h1 {
+        color: white;
+        margin-top: 0;
+        margin-bottom: 32px;
+        position: relative;
+        span.redUnderline {
+            border-top: 4px solid white;
+            width: 48px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    .phoneForm {
+        background: white;
+        width: 100%;
+        border-radius: 30px;
+        padding: 24px 10px 6px;
+        .title {
+            padding: 0 8px;
+        }
+        ng-otp-input {
+            margin: 16px 0;
+             ::ng-deep div.wrapper {
+                display: flex;
+                justify-content: space-around;
+                margin-top: 24px;
+                input.otp-input {
+                    width: 38px;
+                    font-size: 26px;
+                    height: 38px;
+                    &:focus {
+                        // border-color: red;
+                        // border: 0;
+                        // border-bottom: 1px solid black;
+                        // border-radius: 0;
+                        // box-shadow: none;
+                        // text-decoration: none;
+                        // background: red;
+                    }
+                }
+            }
+        }
+        ion-button {
+            --background: #F43D3D;
+            --background-hover: #F43D3D;
+            --background-focused: #F43D3D;
+            --background-activated: #F43D3D;
+            --border-radius: 25px;
+            margin-top: 16px;
+            width: 100%;
+            font-size: 25px;
+            height: 50px;
+        }
+    }
+}
