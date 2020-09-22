@@ -1,0 +1,17 @@
+<div class="stepContainer">
+    <section id="cd-timeline" class="cd-container">
+        <div class="cd-timeline-block" [ngClass]="{ 'active': i <= currentIndex, 'activeItem': i == currentIndex }" *ngFor="let activity of timeline; let i = index;">
+            <div class="cd-timeline-picture dark">
+                <ion-icon name="checkmark-outline"></ion-icon>
+            </div>
+            <div class="cd-timeline-content dark">
+                <h5>{{activity.title}}</h5>
+            </div>
+        </div>
+    </section>
+</div>
+
+<ion-buttons>
+    <ion-button class="ion-float-start" (click)="contact()">تواصل معنا</ion-button>
+    <ion-button class="ion-float-end" (click)="back()">رجوع</ion-button>
+</ion-buttons>

@@ -1,0 +1,20 @@
+<ion-header [translucent]="false">
+    <ion-toolbar>
+        <ion-button routerLink="/home" routerDirection="back" (click)="back()">
+            <ion-icon name="chevron-back-outline" slot="start"></ion-icon>
+        </ion-button>
+        <h1 slot="end">
+            البحث
+        </h1>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-input class="searchBtn" routerLink="/search" dir="rtl">
+                <ion-icon class="suffix-icon" name="search-outline"></ion-icon>
+            </ion-input>
+        </ion-row>
+    </ion-grid>
+</ion-content>
